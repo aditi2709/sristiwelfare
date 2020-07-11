@@ -1,0 +1,13 @@
+<h2>Edit Student</h2>
+
+<?php echo $this->form->create($model->name, array('is_admin' => $this->is_admin)); ?>
+<?php echo $this->form->open_admin_table(); ?>
+<?php echo $this->form->input('name'); ?>
+<?php echo $this->form->input('address'); ?>
+<?php echo $this->form->input('gurdian_name'); ?>
+<?php echo $this->form->input('relation_with_gurdian'); ?>
+<?php echo $this->form->input('contact_number'); ?>
+<?php echo $this->form->input('alternate_contact_number'); ?>
+<?php echo $this->form->input('present_status'); ?>
+<?php echo $this->form->close_admin_table(); ?>
+<?php echo $this->form->end('Update'); ?>

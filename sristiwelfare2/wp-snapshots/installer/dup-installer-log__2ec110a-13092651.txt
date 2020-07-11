@@ -1,0 +1,432 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 11:15:15
+* VERSION: 1.3.22
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.0.33-0ubuntu0.16.04.12              |7.2.24-0ubuntu0.18.04.3
+OS__________________: Linux                                 |Linux
+CREATED_____________: 2020-03-13 09:26:51
+WP VERSION__________: 5.2.5
+DUP VERSION_________: 1.3.22
+DB__________________: 5.7.29
+DB TABLES___________: 17
+DB ROWS_____________: 983
+DB FILE SIZE________: 4.11MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.2.24-0ubuntu0.18.04.3 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache/2.4.29 (Ubuntu)
+DOC ROOT____________: "/var/www/html/sristiwelfare2"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://localhost/sristiwelfare2/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: 1
+DIR PERMS VALUE_____: 1363
+SET FILE PERMS______: 1
+FILE PERMS VALUE____: 1204
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "sristiwelfaresocityclone_2ec110a6d4ecf3d21789_20200313092651_archive.zip"
+SIZE________________: 100.77MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION SHELLEXEC >>> 
+>>> Starting Shell-Exec Unzip:
+Command: unzip -o -qq '/var/www/html/sristiwelfare2/sristiwelfaresocityclone_2ec110a6d4ecf3d21789_20200313092651_archive.zip' -d '/var/www/html/sristiwelfare2' 2>&1
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+[PHP ERR][WARN] MSG:chmod(): Operation not permitted [CODE:2|FILE:/var/www/html/sristiwelfare2/dup-installer/lib/snaplib/class.snaplib.u.io.php|LINE:479]
+Permissions setting on file '/var/www/html/sristiwelfare2/installer.php' failed
+[PHP ERR][WARN] MSG:chmod(): Operation not permitted [CODE:2|FILE:/var/www/html/sristiwelfare2/dup-installer/lib/snaplib/class.snaplib.u.io.php|LINE:479]
+Permissions setting on file '/var/www/html/sristiwelfare2/sristiwelfaresocityclone_2ec110a6d4ecf3d21789_20200313092651_archive.zip' failed
+
+STEP-1 COMPLETE @ 11:15:17 - RUNTIME: 2.5054 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 11:15:40
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.29 -- Build Server: 5.7.29
+FILE SIZE:	dup-database__2ec110a-13092651.sql (2.1MB)
+TIMEOUT:	5000
+MAXPACK:	268435456
+SQLMODE:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/var/www/html/sristiwelfare2/dup-installer/dup-installer-data__2ec110a-13092651.sql]
+COLLATE FB:	Off
+[PHP ERR][WARN] MSG:count(): Parameter must be an array or an object that implements Countable [CODE:2|FILE:/var/www/html/sristiwelfare2/dup-installer/ctrls/ctrl.s2.dbinstall.php|LINE:386]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	159
+
+wp_awp_contact_form: (0)
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_ngg_album: (0)
+wp_ngg_gallery: (0)
+wp_ngg_pictures: (0)
+wp_options: (227)
+wp_postmeta: (466)
+wp_posts: (105)
+wp_term_relationships: (10)
+wp_term_taxonomy: (3)
+wp_termmeta: (0)
+wp_terms: (3)
+wp_usermeta: (129)
+wp_users: (4)
+Removed '46' cache/transient rows
+
+INSERT DATA RUNTIME: 0.7535 sec.
+STEP-2 COMPLETE @ 11:15:40 - RUNTIME: 0.7589 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 11:15:44
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Sristi Welfare Socity"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/var/www/html/sristiwelfare/"
+path_new______________: "/var/www/html/sristiwelfare2/"
+siteurl_______________: "http://localhost/sristiwelfare2"
+url_old_______________: "http://sristiwelfare.in"
+url_new_______________: "http://localhost/sristiwelfare2"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbhost________________: "localhost"
+dbuser________________: "root"
+dbname________________: "sristiwelfare2"
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_username___________: ""
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_awp_contact_form"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/html/sristiwelfare/" ====================> "/var/www/html/sristiwelfare2/"
+	SEARCH  2:"\/var\/www\/html\/sristiwelfare\/" ===============> "\/var\/www\/html\/sristiwelfare2\/"
+	SEARCH  3:"%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare%2F" ==========> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2%2F"
+	SEARCH  4:"\var\www\html\sristiwelfare" =====================> "/var/www/html/sristiwelfare2"
+	SEARCH  5:"\\var\\www\\html\\sristiwelfare" =================> "\/var\/www\/html\/sristiwelfare2"
+	SEARCH  6:"%5Cvar%5Cwww%5Chtml%5Csristiwelfare" =============> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2"
+	SEARCH  7:"//sristiwelfare.in" ==============================> "//localhost/sristiwelfare2"
+	SEARCH  8:"\/\/sristiwelfare.in" ============================> "\/\/localhost\/sristiwelfare2"
+	SEARCH  9:"%2F%2Fsristiwelfare.in" ==========================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 10:"//www.sristiwelfare.in" ==========================> "//localhost/sristiwelfare2"
+	SEARCH 11:"\/\/www.sristiwelfare.in" ========================> "\/\/localhost\/sristiwelfare2"
+	SEARCH 12:"%2F%2Fwww.sristiwelfare.in" ======================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 13:"https://localhost/sristiwelfare2" ================> "http://localhost/sristiwelfare2"
+	SEARCH 14:"https:\/\/localhost\/sristiwelfare2" =============> "http:\/\/localhost\/sristiwelfare2"
+	SEARCH 15:"https%3A%2F%2Flocalhost%2Fsristiwelfare2" ========> "http%3A%2F%2Flocalhost%2Fsristiwelfare2"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_ngg_album"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_ngg_gallery"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_ngg_pictures"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   227][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/html/sristiwelfare/" ====================> "/var/www/html/sristiwelfare2/"
+	SEARCH  2:"\/var\/www\/html\/sristiwelfare\/" ===============> "\/var\/www\/html\/sristiwelfare2\/"
+	SEARCH  3:"%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare%2F" ==========> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2%2F"
+	SEARCH  4:"\var\www\html\sristiwelfare" =====================> "/var/www/html/sristiwelfare2"
+	SEARCH  5:"\\var\\www\\html\\sristiwelfare" =================> "\/var\/www\/html\/sristiwelfare2"
+	SEARCH  6:"%5Cvar%5Cwww%5Chtml%5Csristiwelfare" =============> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2"
+	SEARCH  7:"//sristiwelfare.in" ==============================> "//localhost/sristiwelfare2"
+	SEARCH  8:"\/\/sristiwelfare.in" ============================> "\/\/localhost\/sristiwelfare2"
+	SEARCH  9:"%2F%2Fsristiwelfare.in" ==========================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 10:"//www.sristiwelfare.in" ==========================> "//localhost/sristiwelfare2"
+	SEARCH 11:"\/\/www.sristiwelfare.in" ========================> "\/\/localhost\/sristiwelfare2"
+	SEARCH 12:"%2F%2Fwww.sristiwelfare.in" ======================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 13:"https://localhost/sristiwelfare2" ================> "http://localhost/sristiwelfare2"
+	SEARCH 14:"https:\/\/localhost\/sristiwelfare2" =============> "http:\/\/localhost\/sristiwelfare2"
+	SEARCH 15:"https%3A%2F%2Flocalhost%2Fsristiwelfare2" ========> "http%3A%2F%2Flocalhost%2Fsristiwelfare2"
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:   466][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/html/sristiwelfare/" ====================> "/var/www/html/sristiwelfare2/"
+	SEARCH  2:"\/var\/www\/html\/sristiwelfare\/" ===============> "\/var\/www\/html\/sristiwelfare2\/"
+	SEARCH  3:"%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare%2F" ==========> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2%2F"
+	SEARCH  4:"\var\www\html\sristiwelfare" =====================> "/var/www/html/sristiwelfare2"
+	SEARCH  5:"\\var\\www\\html\\sristiwelfare" =================> "\/var\/www\/html\/sristiwelfare2"
+	SEARCH  6:"%5Cvar%5Cwww%5Chtml%5Csristiwelfare" =============> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2"
+	SEARCH  7:"//sristiwelfare.in" ==============================> "//localhost/sristiwelfare2"
+	SEARCH  8:"\/\/sristiwelfare.in" ============================> "\/\/localhost\/sristiwelfare2"
+	SEARCH  9:"%2F%2Fsristiwelfare.in" ==========================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 10:"//www.sristiwelfare.in" ==========================> "//localhost/sristiwelfare2"
+	SEARCH 11:"\/\/www.sristiwelfare.in" ========================> "\/\/localhost\/sristiwelfare2"
+	SEARCH 12:"%2F%2Fwww.sristiwelfare.in" ======================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 13:"https://localhost/sristiwelfare2" ================> "http://localhost/sristiwelfare2"
+	SEARCH 14:"https:\/\/localhost\/sristiwelfare2" =============> "http:\/\/localhost\/sristiwelfare2"
+	SEARCH 15:"https%3A%2F%2Flocalhost%2Fsristiwelfare2" ========> "http%3A%2F%2Flocalhost%2Fsristiwelfare2"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:   105][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/html/sristiwelfare/" ====================> "/var/www/html/sristiwelfare2/"
+	SEARCH  2:"\/var\/www\/html\/sristiwelfare\/" ===============> "\/var\/www\/html\/sristiwelfare2\/"
+	SEARCH  3:"%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare%2F" ==========> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2%2F"
+	SEARCH  4:"\var\www\html\sristiwelfare" =====================> "/var/www/html/sristiwelfare2"
+	SEARCH  5:"\\var\\www\\html\\sristiwelfare" =================> "\/var\/www\/html\/sristiwelfare2"
+	SEARCH  6:"%5Cvar%5Cwww%5Chtml%5Csristiwelfare" =============> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2"
+	SEARCH  7:"//sristiwelfare.in" ==============================> "//localhost/sristiwelfare2"
+	SEARCH  8:"\/\/sristiwelfare.in" ============================> "\/\/localhost\/sristiwelfare2"
+	SEARCH  9:"%2F%2Fsristiwelfare.in" ==========================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 10:"//www.sristiwelfare.in" ==========================> "//localhost/sristiwelfare2"
+	SEARCH 11:"\/\/www.sristiwelfare.in" ========================> "\/\/localhost\/sristiwelfare2"
+	SEARCH 12:"%2F%2Fwww.sristiwelfare.in" ======================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 13:"https://localhost/sristiwelfare2" ================> "http://localhost/sristiwelfare2"
+	SEARCH 14:"https:\/\/localhost\/sristiwelfare2" =============> "http:\/\/localhost\/sristiwelfare2"
+	SEARCH 15:"https%3A%2F%2Flocalhost%2Fsristiwelfare2" ========> "http%3A%2F%2Flocalhost%2Fsristiwelfare2"
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:    10][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/html/sristiwelfare/" ====================> "/var/www/html/sristiwelfare2/"
+	SEARCH  2:"\/var\/www\/html\/sristiwelfare\/" ===============> "\/var\/www\/html\/sristiwelfare2\/"
+	SEARCH  3:"%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare%2F" ==========> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2%2F"
+	SEARCH  4:"\var\www\html\sristiwelfare" =====================> "/var/www/html/sristiwelfare2"
+	SEARCH  5:"\\var\\www\\html\\sristiwelfare" =================> "\/var\/www\/html\/sristiwelfare2"
+	SEARCH  6:"%5Cvar%5Cwww%5Chtml%5Csristiwelfare" =============> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2"
+	SEARCH  7:"//sristiwelfare.in" ==============================> "//localhost/sristiwelfare2"
+	SEARCH  8:"\/\/sristiwelfare.in" ============================> "\/\/localhost\/sristiwelfare2"
+	SEARCH  9:"%2F%2Fsristiwelfare.in" ==========================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 10:"//www.sristiwelfare.in" ==========================> "//localhost/sristiwelfare2"
+	SEARCH 11:"\/\/www.sristiwelfare.in" ========================> "\/\/localhost\/sristiwelfare2"
+	SEARCH 12:"%2F%2Fwww.sristiwelfare.in" ======================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 13:"https://localhost/sristiwelfare2" ================> "http://localhost/sristiwelfare2"
+	SEARCH 14:"https:\/\/localhost\/sristiwelfare2" =============> "http:\/\/localhost\/sristiwelfare2"
+	SEARCH 15:"https%3A%2F%2Flocalhost%2Fsristiwelfare2" ========> "http%3A%2F%2Flocalhost%2Fsristiwelfare2"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/html/sristiwelfare/" ====================> "/var/www/html/sristiwelfare2/"
+	SEARCH  2:"\/var\/www\/html\/sristiwelfare\/" ===============> "\/var\/www\/html\/sristiwelfare2\/"
+	SEARCH  3:"%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare%2F" ==========> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2%2F"
+	SEARCH  4:"\var\www\html\sristiwelfare" =====================> "/var/www/html/sristiwelfare2"
+	SEARCH  5:"\\var\\www\\html\\sristiwelfare" =================> "\/var\/www\/html\/sristiwelfare2"
+	SEARCH  6:"%5Cvar%5Cwww%5Chtml%5Csristiwelfare" =============> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2"
+	SEARCH  7:"//sristiwelfare.in" ==============================> "//localhost/sristiwelfare2"
+	SEARCH  8:"\/\/sristiwelfare.in" ============================> "\/\/localhost\/sristiwelfare2"
+	SEARCH  9:"%2F%2Fsristiwelfare.in" ==========================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 10:"//www.sristiwelfare.in" ==========================> "//localhost/sristiwelfare2"
+	SEARCH 11:"\/\/www.sristiwelfare.in" ========================> "\/\/localhost\/sristiwelfare2"
+	SEARCH 12:"%2F%2Fwww.sristiwelfare.in" ======================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 13:"https://localhost/sristiwelfare2" ================> "http://localhost/sristiwelfare2"
+	SEARCH 14:"https:\/\/localhost\/sristiwelfare2" =============> "http:\/\/localhost\/sristiwelfare2"
+	SEARCH 15:"https%3A%2F%2Flocalhost%2Fsristiwelfare2" ========> "http%3A%2F%2Flocalhost%2Fsristiwelfare2"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/html/sristiwelfare/" ====================> "/var/www/html/sristiwelfare2/"
+	SEARCH  2:"\/var\/www\/html\/sristiwelfare\/" ===============> "\/var\/www\/html\/sristiwelfare2\/"
+	SEARCH  3:"%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare%2F" ==========> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2%2F"
+	SEARCH  4:"\var\www\html\sristiwelfare" =====================> "/var/www/html/sristiwelfare2"
+	SEARCH  5:"\\var\\www\\html\\sristiwelfare" =================> "\/var\/www\/html\/sristiwelfare2"
+	SEARCH  6:"%5Cvar%5Cwww%5Chtml%5Csristiwelfare" =============> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2"
+	SEARCH  7:"//sristiwelfare.in" ==============================> "//localhost/sristiwelfare2"
+	SEARCH  8:"\/\/sristiwelfare.in" ============================> "\/\/localhost\/sristiwelfare2"
+	SEARCH  9:"%2F%2Fsristiwelfare.in" ==========================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 10:"//www.sristiwelfare.in" ==========================> "//localhost/sristiwelfare2"
+	SEARCH 11:"\/\/www.sristiwelfare.in" ========================> "\/\/localhost\/sristiwelfare2"
+	SEARCH 12:"%2F%2Fwww.sristiwelfare.in" ======================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 13:"https://localhost/sristiwelfare2" ================> "http://localhost/sristiwelfare2"
+	SEARCH 14:"https:\/\/localhost\/sristiwelfare2" =============> "http:\/\/localhost\/sristiwelfare2"
+	SEARCH 15:"https%3A%2F%2Flocalhost%2Fsristiwelfare2" ========> "http%3A%2F%2Flocalhost%2Fsristiwelfare2"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:   129][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/html/sristiwelfare/" ====================> "/var/www/html/sristiwelfare2/"
+	SEARCH  2:"\/var\/www\/html\/sristiwelfare\/" ===============> "\/var\/www\/html\/sristiwelfare2\/"
+	SEARCH  3:"%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare%2F" ==========> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2%2F"
+	SEARCH  4:"\var\www\html\sristiwelfare" =====================> "/var/www/html/sristiwelfare2"
+	SEARCH  5:"\\var\\www\\html\\sristiwelfare" =================> "\/var\/www\/html\/sristiwelfare2"
+	SEARCH  6:"%5Cvar%5Cwww%5Chtml%5Csristiwelfare" =============> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2"
+	SEARCH  7:"//sristiwelfare.in" ==============================> "//localhost/sristiwelfare2"
+	SEARCH  8:"\/\/sristiwelfare.in" ============================> "\/\/localhost\/sristiwelfare2"
+	SEARCH  9:"%2F%2Fsristiwelfare.in" ==========================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 10:"//www.sristiwelfare.in" ==========================> "//localhost/sristiwelfare2"
+	SEARCH 11:"\/\/www.sristiwelfare.in" ========================> "\/\/localhost\/sristiwelfare2"
+	SEARCH 12:"%2F%2Fwww.sristiwelfare.in" ======================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 13:"https://localhost/sristiwelfare2" ================> "http://localhost/sristiwelfare2"
+	SEARCH 14:"https:\/\/localhost\/sristiwelfare2" =============> "http:\/\/localhost\/sristiwelfare2"
+	SEARCH 15:"https%3A%2F%2Flocalhost%2Fsristiwelfare2" ========> "http%3A%2F%2Flocalhost%2Fsristiwelfare2"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"/var/www/html/sristiwelfare/" ====================> "/var/www/html/sristiwelfare2/"
+	SEARCH  2:"\/var\/www\/html\/sristiwelfare\/" ===============> "\/var\/www\/html\/sristiwelfare2\/"
+	SEARCH  3:"%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare%2F" ==========> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2%2F"
+	SEARCH  4:"\var\www\html\sristiwelfare" =====================> "/var/www/html/sristiwelfare2"
+	SEARCH  5:"\\var\\www\\html\\sristiwelfare" =================> "\/var\/www\/html\/sristiwelfare2"
+	SEARCH  6:"%5Cvar%5Cwww%5Chtml%5Csristiwelfare" =============> "%2Fvar%2Fwww%2Fhtml%2Fsristiwelfare2"
+	SEARCH  7:"//sristiwelfare.in" ==============================> "//localhost/sristiwelfare2"
+	SEARCH  8:"\/\/sristiwelfare.in" ============================> "\/\/localhost\/sristiwelfare2"
+	SEARCH  9:"%2F%2Fsristiwelfare.in" ==========================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 10:"//www.sristiwelfare.in" ==========================> "//localhost/sristiwelfare2"
+	SEARCH 11:"\/\/www.sristiwelfare.in" ========================> "\/\/localhost\/sristiwelfare2"
+	SEARCH 12:"%2F%2Fwww.sristiwelfare.in" ======================> "%2F%2Flocalhost%2Fsristiwelfare2"
+	SEARCH 13:"https://localhost/sristiwelfare2" ================> "http://localhost/sristiwelfare2"
+	SEARCH 14:"https:\/\/localhost\/sristiwelfare2" =============> "http:\/\/localhost\/sristiwelfare2"
+	SEARCH 15:"https%3A%2F%2Flocalhost%2Fsristiwelfare2" ========> "http%3A%2F%2Flocalhost%2Fsristiwelfare2"
+--------------------------------------
+SCANNED:	Tables:17 	|	 Rows:948 	|	 Cells:5818 
+UPDATED:	Tables:3 	|	 Rows:118 	|	 Cells:140 
+ERRORS:		0 
+RUNTIME:	0.065900 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""sristiwelfare2""
+	UPDATE DB_USER ""root""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Activated plugins (If they are activated) listed here will be deactivated: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 11:15:44 - RUNTIME: 0.0971 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+====================================

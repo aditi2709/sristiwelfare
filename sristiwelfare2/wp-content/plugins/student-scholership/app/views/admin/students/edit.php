@@ -9,11 +9,11 @@
 <?php echo $this->form->input('contact_number'); ?>
 <?php echo $this->form->input('alternate_contact_number'); ?>
 <?php $options = array(
-  'Value 1'=>'Requested',
-  'Value 2'=>'In-progress',
-  'Value 3'=>'Rejected',
-  'Value 4'=>'Verified',
-  'Value 5'=>'Declined');
-echo $this->form->select('present_status', array( 'label' => 'Present status','options' => $options)); ?>
+  'Requested'=>'Requested',
+  'In-progress'=>'In-progress',
+  'Rejected'=>'Rejected',
+  'Verified'=>'Verified',
+  'Declined'=>'Declined');
+echo $this->form->select('present_status', array( 'label'=>'Present status','options' => $options)); ?>
 <?php echo $this->form->close_admin_table(); ?>
 <?php echo $this->form->end('Update'); ?>

@@ -85,7 +85,7 @@ class MvcFormHelper extends MvcHelper {
         $html .= $this->after_input($field_name, $options);
         return $html;
     }
-	
+
     public function url_input($field_name, $options=array()) {
         $defaults = array(
             'id' => $this->input_id($field_name),
@@ -302,13 +302,15 @@ class MvcFormHelper extends MvcHelper {
 
     public function select_tag($field_name, $options=array()) {
         $defaults = array(
+						'id' => $this->input_id($field_name),
+						'name' => $this->input_name('data['.$this->model_name.']['.$field_name.']'),
             'empty' => false,
             'value' => null
         );
 
         $options = array_merge($defaults, $options);
         $options['options'] = empty($options['options']) ? array() : $options['options'];
-        $options['name'] = $field_name;
+        $options['name'] = 'data['.$this->model_name.']['.$field_name.']';
         $attributes_html = self::attributes_html($options, 'select');
         $html = '<select'.$attributes_html.'>';
         if ($options['empty']) {

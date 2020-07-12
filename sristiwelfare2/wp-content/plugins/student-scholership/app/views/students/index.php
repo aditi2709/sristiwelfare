@@ -4,7 +4,6 @@
     <tr class="info">
       <th class="heading">Name</th>
       <th class="heading">Gurdian</th>
-      <th class="heading">Relation with gurdian</th>
       <th class="heading">Status</th>
       <th class="heading">Current academic</th>
     </tr>

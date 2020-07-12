@@ -4,7 +4,7 @@
 <?php echo $this->form->open_admin_table(); ?>
 <?php echo $this->form->input('academic_id'); ?>
 <?php echo $this->form->input('approved_amount'); ?>
-<?php echo $this->form->input('date_of_approval'); ?>
+<?php echo $this->form->input('date_of_approval',array('type' => 'date')); ?>
 <?php echo $this->form->input('approved_by'); ?>
 <?php echo $this->form->close_admin_table(); ?>
 <?php echo $this->form->end('Update'); ?>
